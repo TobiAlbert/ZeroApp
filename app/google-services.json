@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "861747705839",
+    "firebase_url": "https://zeroapp-14916.firebaseio.com",
+    "project_id": "zeroapp-14916",
+    "storage_bucket": "zeroapp-14916.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861747705839:android:3d69721fa6a990f1",
+        "android_client_info": {
+          "package_name": "com.tobidaada.zeroapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861747705839-kg4doeb7fkdnciicpe74klbaapmn6rot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaRJFNKCzh16H2YR_yd30nwpp6oLWLBrw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
