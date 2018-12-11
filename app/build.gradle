@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'io.fabric'
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -33,6 +35,9 @@ dependencies {
 
     def firebase_core_version = "16.0.6"
     implementation "com.google.firebase:firebase-core:$firebase_core_version"
+
+    def crashlytics_version = "2.9.7"
+    implementation "com.crashlytics.sdk.android:crashlytics:$crashlytics_version"
 }
 
 
