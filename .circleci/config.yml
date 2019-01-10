@@ -19,7 +19,7 @@ jobs:
 
     docker:
           # Android Image Version from Docker
-          - image: circleci/android:api-28-aplha
+          - image: circleci/android:api-25-aplha
 
           # Specify service dependencies here if necessary
           # CircleCI maintains a library of prebuilt images
