@@ -12,7 +12,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".presentation.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -20,11 +20,13 @@
             </intent-filter>
         </activity>
 
-        <!--  Firebase on-demand Crashlytics -->
+        <!-- Firebase on-demand Crashlytics -->
         <meta-data
-            android:name="firebase_crashlytics_collection_enabled"
-            android:value="true"/>
+                android:name="firebase_crashlytics_collection_enabled"
+                android:value="true"/>
 
+        <activity android:name=".koin.MyScopeActivity">
+        </activity>
     </application>
 
 </manifest>
