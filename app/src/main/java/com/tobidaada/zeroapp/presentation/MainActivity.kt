@@ -1,16 +1,20 @@
-package com.tobidaada.zeroapp
+package com.tobidaada.zeroapp.presentation
 
+import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
+import com.tobidaada.zeroapp.BuildConfig
+import com.tobidaada.zeroapp.R
 import com.tobidaada.zeroapp.utils.Consts
 import com.tobidaada.zeroapp.utils.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var mViewModel: MainViewModel
     companion object {
         private var TAG = MainActivity::class.java.simpleName
     }
@@ -21,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        mViewModel = ViewModelProviders.of(this@MainActivity).get(MainViewModel::class.java)
 
         mRemoteConfig =  FirebaseRemoteConfig.getInstance()
         mWelcomeText = welcomeMessageTv
